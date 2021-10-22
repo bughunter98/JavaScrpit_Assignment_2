@@ -1,0 +1,82 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:#dcfafb;
+}
+.form_table{
+    width: 40%;
+    background-color: #2d3e50;
+    border-radius: 10px;
+}
+td{
+    background-color: #2d3e50;
+    color: white;
+}
+.display_table{
+    background-color: #2d3e50;
+    border-collapse: collapse;
+    width: 50%;
+    float: right;
+    
+    margin-top: -400px;
+}
+.display_table th{
+    background-color: #2d3e50;
+    color: white;
+    
+}
+.username
+{
+    background-color: white;
+    border-radius: 5px;
+}
+.password{
+    background-color: white;
+    border-radius: 5px;
+}
+.name{
+    background-color: white;
+    border-radius: 5px;
+}
+.dob{
+    background-color: white;
+    border-radius: 5px;
+}
+.address{
+    background-color: white;
+    border-radius: 5px;
+}
+.email{
+    background-color: white;
+    border-radius: 5px;
+}
+.language{
+    background-color: white;
+    border-radius: 5px;
+}
+.about{
+    background-color: white;
+    border-radius: 5px;
+}
+.button{
+    color: black;
+    font-weight: 600 ;
+    font-size: large;
+    margin: 15px;
+    padding: 5px 20px 5px 20px;
+    float: right;
+    background-color : white;
+    border-radius: 5px;
+
+    
+}
+h1{
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.textBox{
+    margin-top:40px;
+    width: 50%;
+    font-size: 15px;
+    font-weight: 60px;
+    border: 0px;
+}
