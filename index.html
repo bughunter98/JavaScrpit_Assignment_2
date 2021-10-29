@@ -1,84 +1,132 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Dynamic Table</title> 
-    <script src="script.js"></script> 
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <title>Dynamic Table</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <form method="POST" name="sample">
-        <h1>Registration Form</h1>
-        <table class="form_table">
-            <tr>
-                <td>User Name:</td>  
-                <td><input type="text" class="username" name="username" placeholder="Enter User Name"> </td>
-            </tr>
-            <tr>
-                <td>Password : </td>  
-                <td><input type="password"class="password" name="pwd" placeholder="Enter Password"></td>
-            </tr>
-            <tr>
-                <td>Name: </td>  
-                <td><input type="text" class="name" name="name" placeholder="Enter Name"></td>
-            </tr>
-            <tr>
-                <td>Date of Birth : </td>  
-                <td><input type="date" class="dob"name="dob"></td>
-            </tr>
-            <tr>
-                <td>Address: </td>  
-                <td><input type="text" name="address" class="address" placeholder="Enter Your Address"></td>
-            </tr>
-            <tr>
-                <td>Email:</td>  
-                <td><input type="email" class="email" name="email" placeholder="Enter Valid Email"></td>
-            </tr>
-            <tr>
-                <td>Gender:</td>  
-                <td><input type="radio" name="gender" value="Male">Male
-                    <input type="radio" name="gender" value="Female">Female
-                </td>
-            </tr>
-            <tr>
-                <td>Language : </td>  
-                <td> <select name="language" class="language">
-                        <option value="english">English</option>
-                        <option value="telugu">Telugu</option>
-                        <option value="hindi">Hindi</option>
-                        <option value="tamil">Tamil</option>
-                        <option value="marati">Marati</option>
-                        <option value="french">French</option>
-                    </select>
-                </td>
-            </tr>
-            <tr>
-                <td>About :</td>   
-                <td> <input type="text" class="about" name="about" placeholder="Enter About Yourself"> </td>
-            </tr>
-            <tr>
-                <td><button type="button" class="button"name="add" value="Add Data" onclick="addPerson()">Add Data</button></td>
-            </tr>
-            
-        </table>
-        <input type="text" id="textBox"name="textBox" class ="textBox">
-        <table id="tbl" class="display_table" border="1">   
-                <thead>
-                <th>User Name</th> 
-                <th>Name</th>
-                <th>Date of Birth</th>
-                <th>Address</th>
-                <th>Email id</th>
-                <th>Gender</th>
-                <th>Language</th>
-                <th>About</th>
-               
-                </thead>
-                
-                 <tbody>
-                     
-                 </tbody>
-         </table>
-    </form>
-</body>
-</html>
+      <h1>Registration Form</h1>
+      <table class="form_table">
+        <tr>
+          <td>User Name:</td>
+          <td>
+            <input
+              type="text"
+              class="username"
+              name="username"
+              placeholder="Enter User Name"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>Password :</td>
+          <td>
+            <input
+              type="password"
+              class="password"
+              name="pwd"
+              placeholder="Enter Password"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>Name:</td>
+          <td>
+            <input
+              type="text"
+              class="name"
+              name="name"
+              placeholder="Enter Name"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>Date of Birth :</td>
+          <td><input type="date" class="dob" name="dob" /></td>
+        </tr>
+        <tr>
+          <td>Address:</td>
+          <td>
+            <input
+              type="text"
+              name="address"
+              class="address"
+              placeholder="Enter Your Address"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>Email:</td>
+          <td>
+            <input
+              type="email"
+              class="email"
+              name="email"
+              placeholder="Enter Valid Email"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>Gender:</td>
+          <td>
+            <input type="radio" name="gender" value="Male" />Male
+            <input type="radio" name="gender" value="Female" />Female
+          </td>
+        </tr>
+        <tr>
+          <td>Language :</td>
+          <td>
+            <select name="language" id="language" class="language" multiple>
+              <option value="English">English</option>
+              <option value="Telugu">Telugu</option>
+              <option value="French">French</option>
+              <option value="Hindi">Hindi</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>About :</td>
+          <td>
+            <input
+              type="text"
+              class="about"
+              name="about"
+              placeholder="Enter About Yourself"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button
+              type="button"
+              class="button"
+              name="add"
+              value="Add Data"
+              onclick="addPerson()"
+            >
+              Add Data
+            </button>
+          </td>
+        </tr>
+      </table>
+      <input type="text" id="textBox" name="textBox" class="textBox" />
+      <table id="tbl" class="display_table" border="1">
+        <thead>
+          <th>User Id</th>
+          <!-- <th>Password</th>  -->
+          <th>Name</th>
+          <th>Date of Birth</th>
+          <!-- <th>Address</th> -->
+          <th>Email id</th>
+          <th>Gender</th>
+          <!-- <th>Language</th>
+                <th>About</th> -->
+        </thead>
 
+        <tbody></tbody>
+      </table>
+    </form>
+  </body>
+</html>
